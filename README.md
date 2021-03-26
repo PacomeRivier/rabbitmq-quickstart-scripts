@@ -21,13 +21,11 @@ To install `amqp.node` using npm:
 
 ## Code
 
-[Tutorial one: "Hello World!"](https://www.rabbitmq.com/tutorials/tutorial-one-javascript.html):
+Emitter:
 
-    node src/send.js
-    node src/receive.js
+    node src/emitter.js
 
 
-[Tutorial two: Work Queues](https://www.rabbitmq.com/tutorials/tutorial-two-javascript.html):
+Subscriber:
 
-    node src/new_task.js "A very hard task which takes two seconds.."
-    node src/worker.js
+    node src/subscriber.js
