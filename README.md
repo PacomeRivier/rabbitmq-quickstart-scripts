@@ -21,11 +21,19 @@ To install `amqp.node` using npm:
 
 ## Code
 
-Emitter:
+You must fill in the values between brackets before sunning the code:
+
+    <USERNAME>
+    <PASSWORD>
+    <SERVER_ADRESS>
+    <EXCHANGE>
+    <ROUTING_KEY>
+    
+### Emitter
 
     node src/emitter.js
 
 
-Subscriber:
+### Subscriber
 
     node src/subscriber.js
