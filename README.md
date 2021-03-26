@@ -1,0 +1,33 @@
+# Node.js code for RabbitMQ tutorials
+
+Here you can find JavaScript (Node) code examples from [RabbitMQ
+tutorials](https://www.rabbitmq.com/getstarted.html).
+
+To successfully use the examples you will need a running RabbitMQ server.
+
+## Requirements
+
+### Node.js
+
+You need [Node.js](https://nodejs.org/en/download/) and [amqp.node](https://github.com/squaremo/amqp.node)
+to run these tutorials.
+
+
+### Client Library
+
+To install `amqp.node` using npm:
+
+    npm install amqplib -g
+
+## Code
+
+[Tutorial one: "Hello World!"](https://www.rabbitmq.com/tutorials/tutorial-one-javascript.html):
+
+    node src/send.js
+    node src/receive.js
+
+
+[Tutorial two: Work Queues](https://www.rabbitmq.com/tutorials/tutorial-two-javascript.html):
+
+    node src/new_task.js "A very hard task which takes two seconds.."
+    node src/worker.js
