@@ -21,7 +21,7 @@ To install `amqp.node` using npm:
 
 ## Code
 
-You must fill in the values between brackets before sunning the code:
+You must fill in the values between brackets before running the code:
 
     <USERNAME>
     <PASSWORD>
