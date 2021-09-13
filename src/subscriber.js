@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 
 var amqp = require('amqplib/callback_api');
+var dotenv =require('dotenv');
+dotenv.config();
 
 // Connect to RabbitMQ using credentials
-amqp.connect('amqp://<USERNAME>:<PASSWORD>@<SERVER_ADRESS>:5672?heartbeat=30', function(error0, connection) {
+amqp.connect(`amqp://${process.env.USERNAME}:${process.env.PASSWORD}@${process.env.SERVER_ADRESS}:5672?heartbeat=30`, function(error0, connection) {
     if (error0) {
         throw error0;
     }
@@ -12,8 +14,8 @@ amqp.connect('amqp://<USERNAME>:<PASSWORD>@<SERVER_ADRESS>:5672?heartbeat=30', f
         if (error1) {
             throw error1;
         }
-        var exchange = '<EXCHANGE>';
-        var routingKey = '<ROUTING_KEY>';
+        var exchange = process.env.EXCHANGE;
+        var routingKey = process.env.ROUTING_KEY;
 
         // Create a queue to consume
         channel.assertQueue('', {
