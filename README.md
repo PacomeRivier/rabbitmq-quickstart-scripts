@@ -21,13 +21,13 @@ To install `amqp.node` using npm:
 
 ## Code
 
-You must fill in the values between brackets before running the code:
+You must fill in the values in .env before running the code:
 
-    <USERNAME>
-    <PASSWORD>
-    <SERVER_ADRESS>
-    <EXCHANGE>
-    <ROUTING_KEY>
+    USERNAME=
+    PASSWORD=
+    SERVER_ADRESS=
+    EXCHANGE=
+    ROUTING_KEY=
     
 ### Emitter
 
